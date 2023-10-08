@@ -16,8 +16,8 @@ pip3 install flask > /dev/null 2>&1
 rm /bin/chuser > /dev/null 2>&1
 sleep 5
 cd /bin || exit
-wget https://raw.githubusercontent.com/PhoenixxZ2023/conecta/main/c4g > /dev/null 2>&1
-wget https://raw.githubusercontent.com/PhoenixxZ2023/conecta/main/c4g > /dev/null 2>&1
+wget https://raw.githubusercontent.com/PhoenixxZ2023/conecta/main/chuser > /dev/null 2>&1
+wget https://raw.githubusercontent.com/PhoenixxZ2023/conecta/main/userscheck > /dev/null 2>&1
 chmod 777 chuser > /dev/null 2>&1
 chmod 777 userscheck > /dev/null 2>&1
 clear
