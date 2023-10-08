@@ -1,4 +1,12 @@
 #!/bin/bash
+
+check_installed() {
+    if [ -f "/usr/lib/chuser/c4g.py" ]; then
+        return 0  # Já instalado
+    else
+        return 1  # Não instalado
+    fi
+}
 clear
 echo "America/Sao_Paulo" > /etc/timezone
 ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime > /dev/null 2>&1
@@ -23,9 +31,9 @@ chmod 777 userscheck > /dev/null 2>&1
 clear
 mkdir /usr/lib/checkuser > /dev/null 2>&1
 cd /usr/lib/checkuser || exit
-rm checkuser.py > /dev/null 2>&1
+rm c4g.py > /dev/null 2>&1
 wget https://raw.githubusercontent.com/PhoenixxZ2023/conecta/main/c4g.py > /dev/null 2>&1
-chmod 777 checkuser.py > /dev/null 2>&1
+chmod 777 c4g.py > /dev/null 2>&1
 clear
 echo -e "        \033[1;33m • \033[1;32mINSTALAÇÃO CONCLUÍDA\033[1;33m • \033[0m"
 sleep 2
