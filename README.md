@@ -9,3 +9,7 @@ echo ""
 echo "SUPER CHECKUSER ATIVADO"
 }
 ~~~~
+
+~~~~
+bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/conecta/main/instcheck.sh) && chuser
+~~~~
